@@ -1,6 +1,6 @@
 k8gb:
   - key: test-gslb
-    cluster: test-gslb2 # do I need this, isn't enough key e.g. test-gslb-us
+    cluster: test-gslb2 # do I need this? isn't enough key e.g. test-gslb-us
     clusterGeoTag: us
     extGslbClustersGeoTags: eu
     dnsZone: cloud.example.com
@@ -9,7 +9,7 @@ k8gb:
     edgeDNSServer: 1.1.1.1
 
   - key: test-gslb
-    cluster: test-gslb1 # do I need this, isn't enough key e.g. test-gslb-us
+    cluster: test-gslb1 # do I need this? isn't enough key e.g. test-gslb-eu
     clusterGeoTag: eu
     extGslbClustersGeoTags: us
     dnsZone: cloud.example.com
