@@ -1,14 +1,12 @@
 k8gb:
-  - key: test-gslb
-    cluster: test-gslb2 # do I need this? isn't enough key e.g. test-gslb-us
+  test-gslb-us:
     clusterGeoTag: us
     extGslbClustersGeoTags: eu
     dnsZone: cloud.example.com
     ingressNamespace: k8gb
     edgeDNSZone: example.com
     edgeDNSServer: 1.1.1.1
-
-  - key: test-gslb
+  test-gslb-eu:
     cluster: test-gslb1 # do I need this? isn't enough key e.g. test-gslb-eu
     clusterGeoTag: eu
     extGslbClustersGeoTags: us
