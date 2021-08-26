@@ -8,3 +8,19 @@
 
 # ...even if they are in subdirectories
 !*/
+
+
+# Remove release
+It is enough to remove tag e.g.: v0.8.2 and then go to releases and remove draft.
+(release It became draft)
+```shell
+# run these on master branch!
+git tag -d <tag>
+git tag -l
+git push origin :refs/tags/<tag>
+git pull
+# now you can remove draft
+```
+
+git tag v0.8.2
+git push origin refs/tags/v0.8.2
